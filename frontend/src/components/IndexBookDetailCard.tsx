@@ -90,7 +90,7 @@ const IndexBookDetailView: React.FC<BookDetailViewProps> = ({ book }) => {
               <Text>{title}</Text>
             </Heading>
             <Flex gap="2">
-              {/* {md5 != undefined && md5.length > 0 ? (
+              {md5 != undefined && md5.length > 0 ? (
                 <Button
                   as={ExternalLink}
                   minWidth="unset"
@@ -98,7 +98,7 @@ const IndexBookDetailView: React.FC<BookDetailViewProps> = ({ book }) => {
                 >
                   {t('table.redirect2aa')}
                 </Button>
-              ) : null} */}
+              ) : null}
               {extension === 'epub' &&
                 ipfs_cid != undefined &&
                 ipfs_cid.length > 0 &&

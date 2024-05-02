@@ -76,7 +76,7 @@ const App: React.FC = () => {
       <Flex direction="column" minH="100vh">
 
         <SkipNavLink>Skip to content</SkipNavLink>
-        <Header title="24h搜书网" onClick={() => setSearchComponentKey((key) => key + 1)}>
+        <Header title="图书搜索" onClick={() => setSearchComponentKey((key) => key + 1)}>
 
           <HStack spacing={{ base: 1, md: 2 }}>
 
@@ -101,7 +101,7 @@ const App: React.FC = () => {
 
         <Spacer />
         <Footer>
-          <ExternalLink href="https://24hbook.com">24h Book Searcher</ExternalLink> v{version} ©2023
+          <ExternalLink href="https://24hbook.com">Book Searcher</ExternalLink> v{version} ©2023
         </Footer>
       </Flex>
     </RootContext.Provider>

@@ -68,7 +68,7 @@ export default defineConfig(() => {
             appDescription: description,
             icons: {
               favicons: {
-                source: 'icon.png'
+                source: 'public/icon.png'
               },
               android: {
                 source: 'icon.png'

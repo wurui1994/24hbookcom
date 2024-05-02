@@ -14,7 +14,7 @@ const YourLogoImage = () => {
   const logoSrc = colorMode === 'dark' ? '../../icon.png' : '../../icon.png';
 
   return (
-    <Image src={logoSrc} alt="24hbook" boxSize="40px"  />
+    <Image src={logoSrc} alt="24hbook" boxSize="24px"  />
   );
 };
 
