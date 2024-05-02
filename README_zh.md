@@ -92,6 +92,15 @@ docker-compose up -d
 
 ## 从源代码构建
 
+### 开发模式
+```sh
+make frontend_preinstall frontend
+cp  target/release/book-searcher .
+# soft link index dir
+ln -s ~/Downloads/index target/debug/
+cargo run -- run
+```
+
 ### 构建命令行版
 
 **1. 构建前端**

@@ -7,7 +7,7 @@ interface TauriConfig {
 
 export default async function getIpfsGateways() {
   if (import.meta.env.VITE_TAURI === '1') {
-    const api = await import('@tauri-apps/api/primitives');
+    const api = await import('@tauri-apps/api/core');
     return await api.invoke('get_config').then((conf) => {
       const config = conf as TauriConfig;
       return config.ipfs_gateways;

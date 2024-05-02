@@ -6,7 +6,7 @@ import { t } from 'i18next';
 
 export default async function autoDownload(book: Book, toast: any, setDownloadProgress: any) {
   const truncatedTitle = book.title.slice(0, 100);
-  const filename = `${truncatedTitle}_${book.author}_24hbook.com.${book.extension}`;
+  const filename = `${truncatedTitle}_${book.author}.${book.extension}`;
 
   toast({
     title: `${filename} ${t('download_start')}!`,

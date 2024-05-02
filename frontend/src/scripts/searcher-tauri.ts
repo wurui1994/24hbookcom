@@ -1,5 +1,5 @@
 import type { Book, SearchQuery } from './searcher';
-import { invoke } from '@tauri-apps/api/primitives';
+import { invoke } from '@tauri-apps/api/core';
 
 export default async function search(query: SearchQuery) {
   const response = (await invoke('search', {
