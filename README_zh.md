@@ -94,9 +94,16 @@ docker-compose up -d
 
 ### 开发模式
 ```sh
-make frontend_preinstall frontend
+# update
+cd frontend
+pnpm up --latest
+# build
+make frontend_preinstall
+make frontend
 cp  target/release/book-searcher .
+rm -rf frontend/dist
 # soft link index dir
+cargo build
 ln -s ~/Downloads/index target/debug/
 cargo run -- run
 ```
